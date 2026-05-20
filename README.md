@@ -1,4 +1,4 @@
----
+
 
 ## 📝 Report Power Failure Automation
 
@@ -10,7 +10,7 @@ Submits the form on the website for each query.
 Saves the responses into a `results.json` file.
 Saves the responses into a `responses.txt` file.
 
----
+
 
 ### 📂 Project Structure
 
@@ -24,7 +24,6 @@ Saves the responses into a `responses.txt` file.
 └── README.md
 ```
 
----
 
 ## 🔧 Requirements
 
@@ -38,7 +37,6 @@ Install Python dependencies:
 pip install -r requirements.txt
 ```
 
----
 
 ## queries.json format
 
@@ -54,7 +52,6 @@ Create a `queries.json` in the same folder with your account numbers and house n
 
 Each object maps a **house number** to an **account number or prepaid meter serial number**.
 
----
 
 ## How to run
 
@@ -75,7 +72,6 @@ service = Service(executable_path=r"C:/path/to/msedgedriver.exe")
 python main.py
 ```
 
----
 
 ## Output
 
@@ -88,8 +84,6 @@ After running:
 House Number: num - Response: Your call Ref num of date for a power failure at address will be attended to soon.
 ```
 
----
-
 ## Notes
 
 - The script uses **headless mode** (runs without UI).
@@ -98,5 +92,3 @@ House Number: num - Response: Your call Ref num of date for a power failure at a
 - Adjust `time.sleep(3)` if the website takes longer/shorter to return a response.
 
 - Ensure no CAPTCHA or additional login/authentication is required.
-
----
